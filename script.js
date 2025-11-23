@@ -2101,6 +2101,16 @@ document.addEventListener('DOMContentLoaded', function () {
     initSmoothScrolling();
 
     // Initialize 3D effects with performance checks
+    // Define missing initThreeJSAnimations function to call individual 3D init functions
+    function initThreeJSAnimations() {
+        initHero3DBackground();
+        initTech3DBackground();
+        initAbout3DBackground();
+        initSkills3DBackground();
+        initProjects3DBackground();
+        initContact3DBackground();
+    }
+
     setTimeout(() => {
         if (!isLowEnd && !prefersReducedMotion) {
             initThreeJSAnimations();
