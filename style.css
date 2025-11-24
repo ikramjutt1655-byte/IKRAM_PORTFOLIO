@@ -1107,6 +1107,7 @@ img.loaded {
   border-top: 3px solid var(--primary-gradient);
   border-right: 3px solid var(--secondary-gradient);
   animation: spin 8s linear infinite;
+  background-color: black;
 }
 
 @keyframes spin {
